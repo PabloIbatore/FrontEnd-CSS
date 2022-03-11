@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    background:url(https://raw.githubusercontent.com/PabloIbatore/FrontEnd-CSS/main/Imagenes/FondoPag.jpg);
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor2 {
+    padding: 30px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #084c80;
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.titulo2 {
+    color: #084c80;
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+
+img.imagentexto{
+    padding-left: 15px;
+    width: 10px;
+    float: left;
+    margin-right: 0px;
+    margin-top: 0px;
+} 
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #C6FFDD;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fff, #81d9e985, #00a6ff80), url(https://raw.githubusercontent.com/PabloIbatore/FrontEnd-CSS/main/Imagenes/FondoPag.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fff, #81d9e985, #00a6ff80), url(https://raw.githubusercontent.com/PabloIbatore/FrontEnd-CSS/main/Imagenes/FondoPag.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/*Menu superior derecho*/
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color:rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+/* Fin Menu superior derecho*/
+
+header .textos-header{
+    width: 50%;
+    box-sizing: border-box;
+    height: 1px;
+    text-align: center;
+    border: black;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    font-size: 16px;
+    margin: 1px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos-header h1{
+    font-size: 30px;
+    color:rgb(24, 144, 255);
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:rgb(1, 63, 36);
+}
+
+
+
+
+/* Primer Sección Fight virus with vaccines */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 40%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 50%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 20px;
+}
+
+.contenido-textos h2{
+    margin-bottom: 10px;
+}
+.contenido-textos h3 span{
+    background: #1789e1;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.contenido-textos2 p{
+    padding: 25px 0px 80px 25px;
+    width: 60%;
+    box-sizing: border-box;
+    height: 20px;
+    text-align: left;
+    border: black;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 20px;
+    margin: 1px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Marcas de Vacunas */
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 87%;
+    height: 87%;
+    padding: 15px 0px 0px 15px;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(5, 130, 169, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+    font-size: 30px;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+/* Why should I vaccine */
+
+.galeria-port2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port2{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+    padding: 20px 1px 10px 10px;
+    font-size: 17;
+    font-weight: 300;
+    text-align: left;
+    color: #084c80;
+    font-style: bold;
+}
+.imagen-port2 > text{
+    padding: 0px 0px 30px 15px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: justify;
+    color: #084c80;
+    font-style: bold;
+}
+
+.imagen-port2 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(5, 130, 169, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria2 img{
+    width: 70px;
+}
+
+.hover-galeria2 p{
+    color: #fff;
+    font-size: 30px;
+}
+
+.imagen-port2:hover .hover-galeria2{
+    transform: scale(1);
+}
+
+
+
+/* Preparations before vaccine section */
+
+.galeria-port4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port4{
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+    padding: 20px 1px 10px 10px;
+    font-size: 17;
+    font-weight: 300;
+    text-align: left;
+    color: #084c80;
+    font-style: bold;
+}
+.imagen-port4 > text{
+    padding: 0px 0px 30px 15px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: justify;
+    color: #084c80;
+    font-style: bold;
+}
+
+.imagen-port4 > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(5, 130, 169, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria4 img{
+    width: 70px;
+}
+
+.hover-galeria4 p{
+    color: #fff;
+    font-size: 30px;
+}
+
+.imagen-port4:hover .hover-galeria4{
+    transform: scale(1);
+}
+
+/*End of preparations before vaccine */
+
+
+
+
+
+/* Emergency Contact Section */
+
+.galeria-port3{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen-port3{
+    width: 50%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+    padding: 20px 1px 10px 10px;
+    font-size: 17;
+    font-weight: 300;
+    text-align: left;
+    color: #084c80;
+    font-style: bold;
+}
+.imagen-port3 > text{
+    padding: 0px 0px 30px 15px;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: justify;
+    color: #084c80;
+    font-style: bold;
+}
+
+.imagen-port3 > img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(5, 130, 169, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hover-galeria3 img{
+    width: 70px;
+}
+
+.hover-galeria3 p{
+    color: #fff;
+    font-size: 30px;
+}
+
+.imagen-port3:hover .hover-galeria3{
+    transform: scale(1);
+}
+
+ /*Botones llamada*/
+
+.boton{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-family: 'open sans';
+    font-size: 18px;
+    font-style: bold;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+.boton:hover{
+    background: rgb(7, 160, 242);
+    box-shadow: 0 0 10px rgb(7, 160, 242), 0 0 40px
+    rgb(7, 160, 242), 0 0 80px rgb(7, 160, 242);
+    transition-delay: .5s;
+}
+
+.boton span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,rgb(7, 160, 242));
+}
+
+.boton:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,rgb(7, 160, 242));
+}
+
+.boton:hover #span3{
+    right: 100%;
+    transition: 1s;
+}
+
+#span2{
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(7, 160, 242));
+}
+
+.boton:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(7, 160, 242));
+}
+
+.boton:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+/*Fin Emergency Contact sections */
+
+
+
+
+/* Pie de Pagina */
+
+footer{
+    background: rgba(5, 130, 169, 0.7);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #207cd3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+}
